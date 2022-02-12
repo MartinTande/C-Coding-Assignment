@@ -1,0 +1,10 @@
+C:\Git\C-Coding-Assignment\DAQ Sim App\bin\Debug\DAQ Sim App.exe.config
+C:\Git\C-Coding-Assignment\DAQ Sim App\bin\Debug\DAQ Sim App.exe
+C:\Git\C-Coding-Assignment\DAQ Sim App\bin\Debug\DAQ Sim App.pdb
+C:\Git\C-Coding-Assignment\DAQ Sim App\obj\Debug\DAQ Sim App.csproj.AssemblyReference.cache
+C:\Git\C-Coding-Assignment\DAQ Sim App\obj\Debug\DAQ_Sim_App.Form1.resources
+C:\Git\C-Coding-Assignment\DAQ Sim App\obj\Debug\DAQ_Sim_App.Properties.Resources.resources
+C:\Git\C-Coding-Assignment\DAQ Sim App\obj\Debug\DAQ Sim App.csproj.GenerateResource.cache
+C:\Git\C-Coding-Assignment\DAQ Sim App\obj\Debug\DAQ Sim App.csproj.CoreCompileInputs.cache
+C:\Git\C-Coding-Assignment\DAQ Sim App\obj\Debug\DAQ Sim App.exe
+C:\Git\C-Coding-Assignment\DAQ Sim App\obj\Debug\DAQ Sim App.pdb
