@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("DAQ Sim App")]
+[assembly: AssemblyTitle("DAQ Sim App 1")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("DAQ Sim App")]
+[assembly: AssemblyProduct("DAQ Sim App 1")]
 [assembly: AssemblyCopyright("Copyright ©  2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("26afe94b-79a5-4267-b537-d07d48fd693d")]
+[assembly: Guid("2bf77237-c6c6-4465-b4f0-21521fef8985")]
 
 // Version information for an assembly consists of the following four values:
 //

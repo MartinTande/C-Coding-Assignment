@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DAQ_Sim_App
+namespace DAQ_Sim_App_1
 {
     static class Program
     {
@@ -12,7 +12,7 @@ namespace DAQ_Sim_App
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        static void Main(string[] args)
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

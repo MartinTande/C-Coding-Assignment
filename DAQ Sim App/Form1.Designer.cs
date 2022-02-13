@@ -1,5 +1,5 @@
 ﻿
-namespace DAQ_Sim_App
+namespace DAQ_Sim_App_1
 {
     partial class Form1
     {
@@ -29,184 +29,226 @@ namespace DAQ_Sim_App
         /// </summary>
         private void InitializeComponent()
         {
-            this.gbxSampling = new System.Windows.Forms.GroupBox();
-            this.btnSampling = new System.Windows.Forms.Button();
+            this.components = new System.ComponentModel.Container();
+            this.gBxSampling = new System.Windows.Forms.GroupBox();
             this.lblSampling = new System.Windows.Forms.Label();
-            this.txtbxSampling = new System.Windows.Forms.TextBox();
-            this.gbxLogging = new System.Windows.Forms.GroupBox();
-            this.txtLogging = new System.Windows.Forms.TextBox();
+            this.btnSampling = new System.Windows.Forms.Button();
+            this.txtSampling = new System.Windows.Forms.TextBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.gBxLogging = new System.Windows.Forms.GroupBox();
             this.lblLogging = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.gbxSensorValues = new System.Windows.Forms.GroupBox();
-            this.lblHelp = new System.Windows.Forms.Label();
-            this.lblOperations = new System.Windows.Forms.Label();
-            this.lblFile = new System.Windows.Forms.Label();
-            this.txtSensorValues = new System.Windows.Forms.TextBox();
-            this.gbxSampling.SuspendLayout();
-            this.gbxLogging.SuspendLayout();
-            this.gbxSensorValues.SuspendLayout();
+            this.btnLogging = new System.Windows.Forms.Button();
+            this.txtLogging = new System.Windows.Forms.TextBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.gBxSenVal = new System.Windows.Forms.GroupBox();
+            this.txtSenVal = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.tmrSampling = new System.Windows.Forms.Timer(this.components);
+            this.tmrLogging = new System.Windows.Forms.Timer(this.components);
+            this.btnHelp = new System.Windows.Forms.Button();
+            this.gBxSampling.SuspendLayout();
+            this.gBxLogging.SuspendLayout();
+            this.gBxSenVal.SuspendLayout();
             this.SuspendLayout();
             // 
-            // gbxSampling
+            // gBxSampling
             // 
-            this.gbxSampling.Controls.Add(this.txtbxSampling);
-            this.gbxSampling.Controls.Add(this.lblSampling);
-            this.gbxSampling.Controls.Add(this.btnSampling);
-            this.gbxSampling.Location = new System.Drawing.Point(25, 41);
-            this.gbxSampling.Name = "gbxSampling";
-            this.gbxSampling.Size = new System.Drawing.Size(235, 96);
-            this.gbxSampling.TabIndex = 6;
-            this.gbxSampling.TabStop = false;
-            this.gbxSampling.Text = "Sampling";
-            // 
-            // btnSampling
-            // 
-            this.btnSampling.Location = new System.Drawing.Point(9, 61);
-            this.btnSampling.Name = "btnSampling";
-            this.btnSampling.Size = new System.Drawing.Size(94, 23);
-            this.btnSampling.TabIndex = 7;
-            this.btnSampling.Text = "Sampling";
-            this.btnSampling.UseVisualStyleBackColor = true;
+            this.gBxSampling.Controls.Add(this.lblSampling);
+            this.gBxSampling.Controls.Add(this.btnSampling);
+            this.gBxSampling.Controls.Add(this.txtSampling);
+            this.gBxSampling.Controls.Add(this.groupBox2);
+            this.gBxSampling.Location = new System.Drawing.Point(38, 67);
+            this.gBxSampling.Name = "gBxSampling";
+            this.gBxSampling.Size = new System.Drawing.Size(399, 173);
+            this.gBxSampling.TabIndex = 0;
+            this.gBxSampling.TabStop = false;
+            this.gBxSampling.Text = "Sampling";
             // 
             // lblSampling
             // 
             this.lblSampling.AutoSize = true;
-            this.lblSampling.Location = new System.Drawing.Point(6, 22);
+            this.lblSampling.Location = new System.Drawing.Point(18, 50);
             this.lblSampling.Name = "lblSampling";
-            this.lblSampling.Size = new System.Drawing.Size(101, 13);
-            this.lblSampling.TabIndex = 9;
+            this.lblSampling.Size = new System.Drawing.Size(188, 25);
+            this.lblSampling.TabIndex = 3;
             this.lblSampling.Text = "Next Sampling Time";
             // 
-            // txtbxSampling
+            // btnSampling
             // 
-            this.txtbxSampling.Location = new System.Drawing.Point(121, 19);
-            this.txtbxSampling.Name = "txtbxSampling";
-            this.txtbxSampling.Size = new System.Drawing.Size(100, 20);
-            this.txtbxSampling.TabIndex = 9;
-            this.txtbxSampling.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
+            this.btnSampling.Location = new System.Drawing.Point(23, 110);
+            this.btnSampling.Name = "btnSampling";
+            this.btnSampling.Size = new System.Drawing.Size(171, 36);
+            this.btnSampling.TabIndex = 2;
+            this.btnSampling.Text = "Sampling";
+            this.btnSampling.UseVisualStyleBackColor = true;
+            this.btnSampling.Click += new System.EventHandler(this.btnSampling_Click);
             // 
-            // gbxLogging
+            // txtSampling
             // 
-            this.gbxLogging.Controls.Add(this.txtLogging);
-            this.gbxLogging.Controls.Add(this.lblLogging);
-            this.gbxLogging.Controls.Add(this.button2);
-            this.gbxLogging.Location = new System.Drawing.Point(25, 153);
-            this.gbxLogging.Name = "gbxLogging";
-            this.gbxLogging.Size = new System.Drawing.Size(235, 96);
-            this.gbxLogging.TabIndex = 9;
-            this.gbxLogging.TabStop = false;
-            this.gbxLogging.Text = "Logging";
-            this.gbxLogging.Enter += new System.EventHandler(this.groupBox2_Enter);
+            this.txtSampling.Location = new System.Drawing.Point(226, 47);
+            this.txtSampling.Name = "txtSampling";
+            this.txtSampling.Size = new System.Drawing.Size(156, 29);
+            this.txtSampling.TabIndex = 1;
+            this.txtSampling.TextChanged += new System.EventHandler(this.txtSampling_TextChanged);
             // 
-            // txtLogging
+            // groupBox2
             // 
-            this.txtLogging.Location = new System.Drawing.Point(121, 19);
-            this.txtLogging.Name = "txtLogging";
-            this.txtLogging.Size = new System.Drawing.Size(100, 20);
-            this.txtLogging.TabIndex = 9;
+            this.groupBox2.Location = new System.Drawing.Point(59, 25);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(8, 8);
+            this.groupBox2.TabIndex = 0;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "groupBox2";
+            // 
+            // gBxLogging
+            // 
+            this.gBxLogging.Controls.Add(this.lblLogging);
+            this.gBxLogging.Controls.Add(this.btnLogging);
+            this.gBxLogging.Controls.Add(this.txtLogging);
+            this.gBxLogging.Controls.Add(this.groupBox3);
+            this.gBxLogging.Location = new System.Drawing.Point(38, 268);
+            this.gBxLogging.Name = "gBxLogging";
+            this.gBxLogging.Size = new System.Drawing.Size(399, 173);
+            this.gBxLogging.TabIndex = 1;
+            this.gBxLogging.TabStop = false;
+            this.gBxLogging.Text = "Logging";
             // 
             // lblLogging
             // 
             this.lblLogging.AutoSize = true;
-            this.lblLogging.Location = new System.Drawing.Point(6, 22);
+            this.lblLogging.Location = new System.Drawing.Point(18, 50);
             this.lblLogging.Name = "lblLogging";
-            this.lblLogging.Size = new System.Drawing.Size(96, 13);
-            this.lblLogging.TabIndex = 9;
+            this.lblLogging.Size = new System.Drawing.Size(176, 25);
+            this.lblLogging.TabIndex = 3;
             this.lblLogging.Text = "Next Logging Time";
             // 
-            // button2
+            // btnLogging
             // 
-            this.button2.Location = new System.Drawing.Point(9, 61);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(94, 23);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Logging on File";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnLogging.Location = new System.Drawing.Point(23, 110);
+            this.btnLogging.Name = "btnLogging";
+            this.btnLogging.Size = new System.Drawing.Size(171, 36);
+            this.btnLogging.TabIndex = 2;
+            this.btnLogging.Text = "Logging on File";
+            this.btnLogging.UseVisualStyleBackColor = true;
+            this.btnLogging.Click += new System.EventHandler(this.btnLogging_Click);
             // 
-            // gbxSensorValues
+            // txtLogging
             // 
-            this.gbxSensorValues.Controls.Add(this.txtSensorValues);
-            this.gbxSensorValues.Location = new System.Drawing.Point(283, 41);
-            this.gbxSensorValues.Name = "gbxSensorValues";
-            this.gbxSensorValues.Size = new System.Drawing.Size(144, 208);
-            this.gbxSensorValues.TabIndex = 10;
-            this.gbxSensorValues.TabStop = false;
-            this.gbxSensorValues.Text = "Sensor Values";
+            this.txtLogging.Location = new System.Drawing.Point(226, 47);
+            this.txtLogging.Name = "txtLogging";
+            this.txtLogging.Size = new System.Drawing.Size(156, 29);
+            this.txtLogging.TabIndex = 1;
+            this.txtLogging.TextChanged += new System.EventHandler(this.txtLogging_TextChanged);
             // 
-            // lblHelp
+            // groupBox3
             // 
-            this.lblHelp.AutoSize = true;
-            this.lblHelp.Location = new System.Drawing.Point(143, 9);
-            this.lblHelp.Name = "lblHelp";
-            this.lblHelp.Size = new System.Drawing.Size(29, 13);
-            this.lblHelp.TabIndex = 11;
-            this.lblHelp.Text = "Help";
+            this.groupBox3.Location = new System.Drawing.Point(59, 25);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(8, 8);
+            this.groupBox3.TabIndex = 0;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "groupBox3";
             // 
-            // lblOperations
+            // gBxSenVal
             // 
-            this.lblOperations.AutoSize = true;
-            this.lblOperations.Location = new System.Drawing.Point(55, 9);
-            this.lblOperations.Name = "lblOperations";
-            this.lblOperations.Size = new System.Drawing.Size(58, 13);
-            this.lblOperations.TabIndex = 12;
-            this.lblOperations.Text = "Operations";
+            this.gBxSenVal.Controls.Add(this.txtSenVal);
+            this.gBxSenVal.Location = new System.Drawing.Point(466, 67);
+            this.gBxSenVal.Name = "gBxSenVal";
+            this.gBxSenVal.Size = new System.Drawing.Size(253, 374);
+            this.gBxSenVal.TabIndex = 2;
+            this.gBxSenVal.TabStop = false;
+            this.gBxSenVal.Text = "SensorValues";
             // 
-            // lblFile
+            // txtSenVal
             // 
-            this.lblFile.AutoSize = true;
-            this.lblFile.Location = new System.Drawing.Point(12, 9);
-            this.lblFile.Name = "lblFile";
-            this.lblFile.Size = new System.Drawing.Size(23, 13);
-            this.lblFile.TabIndex = 13;
-            this.lblFile.Text = "File";
+            this.txtSenVal.Location = new System.Drawing.Point(18, 37);
+            this.txtSenVal.Multiline = true;
+            this.txtSenVal.Name = "txtSenVal";
+            this.txtSenVal.Size = new System.Drawing.Size(217, 322);
+            this.txtSenVal.TabIndex = 3;
             // 
-            // txtSensorValues
+            // label1
             // 
-            this.txtSensorValues.Location = new System.Drawing.Point(6, 22);
-            this.txtSensorValues.Multiline = true;
-            this.txtSensorValues.Name = "txtSensorValues";
-            this.txtSensorValues.Size = new System.Drawing.Size(129, 180);
-            this.txtSensorValues.TabIndex = 14;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(33, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(43, 25);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "File";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(101, 18);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(108, 25);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "Operations";
+            // 
+            // tmrSampling
+            // 
+            this.tmrSampling.Interval = 2300;
+            this.tmrSampling.Tick += new System.EventHandler(this.tmrSampling_Tick);
+            // 
+            // tmrLogging
+            // 
+            this.tmrLogging.Interval = 58000;
+            this.tmrLogging.Tick += new System.EventHandler(this.tmrLogging_Tick);
+            // 
+            // btnHelp
+            // 
+            this.btnHelp.Location = new System.Drawing.Point(233, 13);
+            this.btnHelp.Name = "btnHelp";
+            this.btnHelp.Size = new System.Drawing.Size(75, 35);
+            this.btnHelp.TabIndex = 6;
+            this.btnHelp.Text = "Help";
+            this.btnHelp.UseVisualStyleBackColor = true;
+            this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(454, 276);
-            this.Controls.Add(this.lblFile);
-            this.Controls.Add(this.lblOperations);
-            this.Controls.Add(this.lblHelp);
-            this.Controls.Add(this.gbxSensorValues);
-            this.Controls.Add(this.gbxLogging);
-            this.Controls.Add(this.gbxSampling);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ClientSize = new System.Drawing.Size(769, 478);
+            this.Controls.Add(this.btnHelp);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.gBxSenVal);
+            this.Controls.Add(this.gBxLogging);
+            this.Controls.Add(this.gBxSampling);
             this.Name = "Form1";
-            this.Text = "DAQ Simulation Application";
-            this.gbxSampling.ResumeLayout(false);
-            this.gbxSampling.PerformLayout();
-            this.gbxLogging.ResumeLayout(false);
-            this.gbxLogging.PerformLayout();
-            this.gbxSensorValues.ResumeLayout(false);
-            this.gbxSensorValues.PerformLayout();
+            this.Text = "DAQ Simulation App";
+            this.gBxSampling.ResumeLayout(false);
+            this.gBxSampling.PerformLayout();
+            this.gBxLogging.ResumeLayout(false);
+            this.gBxLogging.PerformLayout();
+            this.gBxSenVal.ResumeLayout(false);
+            this.gBxSenVal.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.GroupBox gbxSampling;
-        private System.Windows.Forms.TextBox txtbxSampling;
+
+        private System.Windows.Forms.GroupBox gBxSampling;
         private System.Windows.Forms.Label lblSampling;
         private System.Windows.Forms.Button btnSampling;
-        private System.Windows.Forms.GroupBox gbxLogging;
-        private System.Windows.Forms.TextBox txtLogging;
+        private System.Windows.Forms.TextBox txtSampling;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox gBxLogging;
         private System.Windows.Forms.Label lblLogging;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.GroupBox gbxSensorValues;
-        private System.Windows.Forms.Label lblHelp;
-        private System.Windows.Forms.Label lblOperations;
-        private System.Windows.Forms.Label lblFile;
-        private System.Windows.Forms.TextBox txtSensorValues;
+        private System.Windows.Forms.Button btnLogging;
+        private System.Windows.Forms.TextBox txtLogging;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox gBxSenVal;
+        private System.Windows.Forms.TextBox txtSenVal;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Timer tmrSampling;
+        private System.Windows.Forms.Timer tmrLogging;
+        private System.Windows.Forms.Button btnHelp;
     }
 }
 
