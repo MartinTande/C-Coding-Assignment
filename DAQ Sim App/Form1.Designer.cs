@@ -29,7 +29,6 @@ namespace DAQ_Sim_App_1
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.gBxSampling = new System.Windows.Forms.GroupBox();
             this.lblSampling = new System.Windows.Forms.Label();
             this.btnSampling = new System.Windows.Forms.Button();
@@ -44,8 +43,6 @@ namespace DAQ_Sim_App_1
             this.txtSenVal = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.tmrSampling = new System.Windows.Forms.Timer(this.components);
-            this.tmrLogging = new System.Windows.Forms.Timer(this.components);
             this.btnHelp = new System.Windows.Forms.Button();
             this.gBxSampling.SuspendLayout();
             this.gBxLogging.SuspendLayout();
@@ -186,16 +183,6 @@ namespace DAQ_Sim_App_1
             this.label2.TabIndex = 4;
             this.label2.Text = "Operations";
             // 
-            // tmrSampling
-            // 
-            this.tmrSampling.Interval = 2300;
-            this.tmrSampling.Tick += new System.EventHandler(this.tmrSampling_Tick);
-            // 
-            // tmrLogging
-            // 
-            this.tmrLogging.Interval = 58000;
-            this.tmrLogging.Tick += new System.EventHandler(this.tmrLogging_Tick);
-            // 
             // btnHelp
             // 
             this.btnHelp.Location = new System.Drawing.Point(233, 13);
@@ -246,8 +233,6 @@ namespace DAQ_Sim_App_1
         private System.Windows.Forms.TextBox txtSenVal;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Timer tmrSampling;
-        private System.Windows.Forms.Timer tmrLogging;
         private System.Windows.Forms.Button btnHelp;
     }
 }
