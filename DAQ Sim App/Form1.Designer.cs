@@ -29,6 +29,7 @@ namespace DAQ_Sim_App_1
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.gBxSampling = new System.Windows.Forms.GroupBox();
             this.lblSampling = new System.Windows.Forms.Label();
             this.btnSampling = new System.Windows.Forms.Button();
@@ -44,6 +45,11 @@ namespace DAQ_Sim_App_1
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnHelp = new System.Windows.Forms.Button();
+            this.tmrSampling = new System.Windows.Forms.Timer(this.components);
+            this.tmrLogging = new System.Windows.Forms.Timer(this.components);
+            this.lblNotice = new System.Windows.Forms.Label();
+            this.lblNoticeL = new System.Windows.Forms.Label();
+            this.lblNoticeS = new System.Windows.Forms.Label();
             this.gBxSampling.SuspendLayout();
             this.gBxLogging.SuspendLayout();
             this.gBxSenVal.SuspendLayout();
@@ -87,6 +93,7 @@ namespace DAQ_Sim_App_1
             this.txtSampling.Name = "txtSampling";
             this.txtSampling.Size = new System.Drawing.Size(156, 29);
             this.txtSampling.TabIndex = 1;
+            this.txtSampling.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtSampling.TextChanged += new System.EventHandler(this.txtSampling_TextChanged);
             // 
             // groupBox2
@@ -136,6 +143,7 @@ namespace DAQ_Sim_App_1
             this.txtLogging.Name = "txtLogging";
             this.txtLogging.Size = new System.Drawing.Size(156, 29);
             this.txtLogging.TabIndex = 1;
+            this.txtLogging.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtLogging.TextChanged += new System.EventHandler(this.txtLogging_TextChanged);
             // 
             // groupBox3
@@ -152,17 +160,18 @@ namespace DAQ_Sim_App_1
             this.gBxSenVal.Controls.Add(this.txtSenVal);
             this.gBxSenVal.Location = new System.Drawing.Point(466, 67);
             this.gBxSenVal.Name = "gBxSenVal";
-            this.gBxSenVal.Size = new System.Drawing.Size(253, 374);
+            this.gBxSenVal.Size = new System.Drawing.Size(348, 395);
             this.gBxSenVal.TabIndex = 2;
             this.gBxSenVal.TabStop = false;
             this.gBxSenVal.Text = "SensorValues";
             // 
             // txtSenVal
             // 
-            this.txtSenVal.Location = new System.Drawing.Point(18, 37);
+            this.txtSenVal.Location = new System.Drawing.Point(17, 28);
             this.txtSenVal.Multiline = true;
             this.txtSenVal.Name = "txtSenVal";
-            this.txtSenVal.Size = new System.Drawing.Size(217, 322);
+            this.txtSenVal.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txtSenVal.Size = new System.Drawing.Size(308, 346);
             this.txtSenVal.TabIndex = 3;
             // 
             // label1
@@ -193,11 +202,48 @@ namespace DAQ_Sim_App_1
             this.btnHelp.UseVisualStyleBackColor = true;
             this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
+            // tmrSampling
+            // 
+            this.tmrSampling.Interval = 1000;
+            this.tmrSampling.Tick += new System.EventHandler(this.tmrSampling_Tick);
+            // 
+            // tmrLogging
+            // 
+            this.tmrLogging.Interval = 1000;
+            this.tmrLogging.Tick += new System.EventHandler(this.tmrLogging_Tick);
+            // 
+            // lblNotice
+            // 
+            this.lblNotice.AutoSize = true;
+            this.lblNotice.Location = new System.Drawing.Point(301, 243);
+            this.lblNotice.Name = "lblNotice";
+            this.lblNotice.Size = new System.Drawing.Size(0, 25);
+            this.lblNotice.TabIndex = 7;
+            // 
+            // lblNoticeL
+            // 
+            this.lblNoticeL.AutoSize = true;
+            this.lblNoticeL.Location = new System.Drawing.Point(168, 455);
+            this.lblNoticeL.Name = "lblNoticeL";
+            this.lblNoticeL.Size = new System.Drawing.Size(0, 35);
+            this.lblNoticeL.TabIndex = 8;
+            // 
+            // lblNoticeS
+            // 
+            this.lblNoticeS.AutoSize = true;
+            this.lblNoticeS.Location = new System.Drawing.Point(168, 243);
+            this.lblNoticeS.Name = "lblNoticeS";
+            this.lblNoticeS.Size = new System.Drawing.Size(0, 35);
+            this.lblNoticeS.TabIndex = 9;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(769, 478);
+            this.ClientSize = new System.Drawing.Size(953, 498);
+            this.Controls.Add(this.lblNoticeS);
+            this.Controls.Add(this.lblNoticeL);
+            this.Controls.Add(this.lblNotice);
             this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -234,6 +280,11 @@ namespace DAQ_Sim_App_1
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnHelp;
+        private System.Windows.Forms.Timer tmrSampling;
+        private System.Windows.Forms.Timer tmrLogging;
+        private System.Windows.Forms.Label lblNotice;
+        private System.Windows.Forms.Label lblNoticeL;
+        private System.Windows.Forms.Label lblNoticeS;
     }
 }
 
